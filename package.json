@@ -1,0 +1,32 @@
+{
+  "name": "do-nothing",
+  "version": "1.0.0",
+  "description": "A CLI that looks like it's installing things but does absolutely nothing",
+  "main": "index.js",
+  "bin": {
+    "do-nothing": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md}\""
+  },
+  "keywords": [
+    "cli",
+    "fake",
+    "installer",
+    "nothing",
+    "fun"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
