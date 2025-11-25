@@ -2,6 +2,7 @@
   "name": "do-nothing",
   "version": "1.0.0",
   "description": "A CLI that looks like it's installing things but does absolutely nothing",
+  "type": "module",
   "main": "index.js",
   "bin": {
     "do-nothing": "./index.js"
@@ -22,9 +23,9 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.13.2",
-    "chalk": "^4.1.2",
+    "chalk": "^5.6.2",
     "cli-progress": "^3.12.0",
-    "ora": "^5.4.1"
+    "ora": "^9.0.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2"

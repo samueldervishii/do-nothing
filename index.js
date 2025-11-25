@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-const chalk = require("chalk");
-const ora = require("ora");
-const { randomDelay } = require("./lib/utils/delays");
-const { getRealSystemInfo } = require("./lib/utils/systemInfo");
-const {
+import chalk from "chalk";
+import ora from "ora";
+import { randomDelay } from "./lib/utils/delays.js";
+import { getRealSystemInfo } from "./lib/utils/systemInfo.js";
+import {
   runBIOSSimulation,
   runBIOSUpdateSimulation,
-} = require("./lib/simulations/bios");
-const { loadKernelModules } = require("./lib/simulations/kernel");
-const { installDrivers } = require("./lib/simulations/drivers");
-const { scanWifiNetworks } = require("./lib/simulations/network");
-const {
+} from "./lib/simulations/bios.js";
+import { loadKernelModules } from "./lib/simulations/kernel.js";
+import { installDrivers } from "./lib/simulations/drivers.js";
+import { scanWifiNetworks } from "./lib/simulations/network.js";
+import {
   mountFilesystems,
   startServices,
-} = require("./lib/simulations/filesystem");
-const {
+} from "./lib/simulations/filesystem.js";
+import {
   connectToRegistry,
   showSpaceFact,
   resolveDependencies,
@@ -25,8 +25,8 @@ const {
   buildNativeModules,
   runPostInstallScripts,
   optimizeBundle,
-} = require("./lib/simulations/packages");
-const packages = require("./lib/data/packages");
+} from "./lib/simulations/packages.js";
+import packages from "./lib/data/packages.js";
 
 async function main() {
   console.log(chalk.bold.cyan("\n" + "=".repeat(65)));
